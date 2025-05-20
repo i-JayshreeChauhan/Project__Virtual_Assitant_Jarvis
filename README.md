@@ -79,13 +79,21 @@ You can trigger these using `play <songname>`:
 
 1. **Install dependencies:**
 
-```bash
-pip install pyttsx3 SpeechRecognition requests
+   ```bash
+   pip install pyttsx3 SpeechRecognition requests PyAudio
 
+2. **Set your API keys in the script:**
+   ```Python
+   gemini_api_key = "YOUR_GEMINI_API_KEY"
+   ews_api_key = "YOUR_NEWS_API_KEY"  # optional
 
-Install PyAudio (required for speech_recognition):
+3. **Run the script:**
+   ```bash
+   python main.py
 
-```bash
-# For Windows (use pipwin if facing issues)
-pip install pipwin
-pipwin install pyaudio
+🙋‍♀️ Created by
+Jayshree
+A passionate techie, engineer, and voice interface enthusiast!
+
+📌 Notes
+You must have an active internet connection for Gemini and news features to work.
