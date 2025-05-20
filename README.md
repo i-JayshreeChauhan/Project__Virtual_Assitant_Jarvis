@@ -14,19 +14,19 @@
 - 📁 Open local image file
 - 📅 Announces current date and time
 - 📰 (Optional) News headlines feature (currently commented out)
-- 💬 Gracefully exits on "stop/quit/exit conversation"
+- 💬 Gracefully exits on `"stop"`, `"quit"`, or `"exit conversation"`
 
 ---
 
 ## 🛠️ Technologies & Libraries Used
 
 - Python 3
-- `speech_recognition` - For converting speech to text
-- `pyttsx3` - For text-to-speech functionality
-- `webbrowser` - To open URLs in the default browser
-- `os` - For local file handling
-- `requests` - For API calls (optional news feature)
-- `google.genai` - For processing AI responses using Google Gemini
+- `speech_recognition` – For converting speech to text
+- `pyttsx3` – For text-to-speech functionality
+- `webbrowser` – To open URLs in the default browser
+- `os` – For local file handling
+- `requests` – For API calls (optional news feature)
+- `google.generativeai` – For processing AI responses using Google Gemini
 
 ---
 
@@ -47,14 +47,14 @@
 
 You can trigger these using `play <songname>`:
 
-| Song Name | Description                         |
-|-----------|-------------------------------------|
-| got       | Game of Thrones Theme               |
-| friends   | Friends Theme                       |
-| tahm      | Two and a Half Men Theme            |
-| himym     | How I Met Your Mother Theme         |
-| pubg      | PUBG Background Score               |
-| waka      | Waka Waka by Shakira                |
+| Song Name | Description                  |
+|-----------|------------------------------|
+| got       | Game of Thrones Theme        |
+| friends   | Friends Theme                |
+| tahm      | Two and a Half Men Theme     |
+| himym     | How I Met Your Mother Theme  |
+| pubg      | PUBG Background Score        |
+| waka      | Waka Waka by Shakira         |
 
 ---
 
@@ -71,42 +71,21 @@ You can trigger these using `play <songname>`:
 ## 🔐 API Keys
 
 - **Google Gemini API Key** – Required for AI responses
-- **News API Key** – Optional, currently commented out
+- **News API Key** – Optional (currently commented out)
 
 ---
 
 ## 📦 Setup Instructions
 
-1. **Install dependencies**:
+1. **Install dependencies:**
 
 ```bash
 pip install pyttsx3 SpeechRecognition requests
 
 
-2. **Install PyAudio** (needed by speech_recognition):
+Install PyAudio (required for speech_recognition):
 
 ```bash
 # For Windows (use pipwin if facing issues)
 pip install pipwin
 pipwin install pyaudio
-
-3. **Set your Gemini and News API keys in the script**
-gemini_api_key = "YOUR_GEMINI_API_KEY"
-news_api_key = "YOUR_NEWS_API_KEY"
-
-4. **Run the script:**
-```bash
-python main.py
-
----
-🙋‍♀️ Created by
-Jayshree
-
-A passionate techie, engineer, and voice interface enthusiast!
-
----
-
-📌 Notes
-You must have an active internet connection for Gemini and news features to work.
-
-You can expand the functionality to include alarms, timers, weather, or integrate ChatGPT.

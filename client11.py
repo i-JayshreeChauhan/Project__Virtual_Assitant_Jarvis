@@ -1,6 +1,6 @@
 from google import genai
 
-client = genai.Client(api_key="AIzaSyBLWPvsytYZO2SM4S4Nle9OZ6rilaK1jY4")
+client = genai.Client(api_key="<api-key>")
 chat = client.chats.create(model="gemini-2.0-flash")
 
 response = chat.send_message("My name is jayshree")
